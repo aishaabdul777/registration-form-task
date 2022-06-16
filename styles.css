@@ -1,0 +1,227 @@
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    main {
+        background-image: url(bg-intro-desktop.png);
+        background-color: hsl(0, 100%, 74%);
+        display: flex;
+        flex-direction: row;
+        margin: auto;
+        width: 100%;
+        padding: 40px;
+        align-content: center;
+        flex-wrap: nowrap;
+        height: 100%;
+    }
+    
+    @font-face {
+        font-family: myFont;
+        src: url(Poppins-Regular.ttf)
+    }
+    
+    @font-face {
+        font-family: mySecondFont;
+        src: url(Poppins-Bold.ttf)
+    }
+    
+    @font-face {
+        font-family: myThird;
+        src: url(Poppins-ExtraLight.ttf)
+    }
+    
+    p {
+        color: white;
+        font-size: 16px;
+        font-family: myFont;
+        height: 30vh;
+        width: 90%;
+    }
+    
+    h1 {
+        color: white;
+        font-size: 50px;
+        font-family: mySecondFont;
+        width: 80%;
+        margin-top: 100px;
+    }
+    
+    input[type=password] {
+        width: 100%;
+        padding: 15px;
+        border: 2px solid hsl(248, 32%, 90%);
+        border-radius: 5px;
+        font-family: mySecondFont;
+        font-size: 16px;
+    }
+    
+    input[type=text] {
+        width: 100%;
+        padding: 15px;
+        border: 2px solid hsl(248, 32%, 90%);
+        border-radius: 5px;
+        font-family: mySecondFont;
+        font-size: 16px;
+    }
+    
+    input[type=email] {
+        width: 100%;
+        padding: 15px;
+        border: 2px solid hsl(248, 32%, 90%);
+        border-radius: 5px;
+        font-family: mySecondFont;
+        font-size: 16px;
+    }
+    
+    input[type=text]:focus {
+        border: 2px solid hsl(248, 32%, 49%);
+    }
+    
+    input:focus:invalid {
+        border: 2px solid red;
+        background-image: url('icon-error.svg');
+        background-repeat: no-repeat;
+        background-position: 400px 10px;
+        padding-left: 40px;
+    }
+    
+    input[type=submit] {
+        width: 100%;
+        padding: 15px;
+        background-color: hsl(154, 59%, 51%);
+        border-radius: 5px;
+        font-family: myFont;
+        font-size: 16px;
+        border: none;
+        box-shadow: 0px 5px hsl(154, 59%, 40%);
+        color: white;
+    }
+    
+    form {
+        background-color: white;
+        padding: 35px;
+        margin-right: 200px;
+        margin-top: 20px;
+        width: 100%;
+        border-radius: 10px;
+    }
+    /* .formdiv { */
+    /* display: flex; */
+    /* flex-direction: row; */
+    
+    .maindiv {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+    
+    h4 {
+        background-color: hsl(248, 32%, 49%);
+        font-family: myFont;
+        font-size: 16px;
+        padding: 20px;
+        color: white;
+        border-radius: 10px;
+        box-shadow: 2px 7px rgba(0, 0, 0, 0.3);
+        width: 100%;
+    }
+    
+    h5 {
+        font-family: myFont;
+        padding: 20px;
+        font-size: 10px;
+        color: hsl(246, 25%, 77%);
+    }
+    
+    a {
+        font-family: myFont;
+        font-size: 10px;
+        color: red;
+    }
+    /* .item-a { */
+    /* grid-area: a; */
+    
+    .item-b {
+        grid-area: b;
+        flex-wrap: wrap;
+    }
+    
+    @media screen and (max-width: 1000px) {
+        .maindiv {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: nowrap;
+        }
+        main {
+            background-image: url(bg-intro-mobile.png);
+            background-color: hsl(0, 100%, 74%);
+            display: flex;
+            flex-direction: column;
+            align-content: center;
+            flex-wrap: nowrap;
+            width: 100%;
+        }
+        input[type=password] {
+            width: 100%;
+            padding: 10px;
+            border: 2px solid hsl(248, 32%, 90%);
+            border-radius: 5px;
+            font-family: mySecondFont;
+            font-size: 16px;
+        }
+        input[type=text] {
+            width: 100%;
+            padding: 10px;
+            border: 2px solid hsl(248, 32%, 90%);
+            border-radius: 5px;
+            font-family: mySecondFont;
+            font-size: 16px;
+        }
+        input[type=email] {
+            width: 100%;
+            padding: 10px;
+            border: 2px solid hsl(248, 32%, 90%);
+            border-radius: 5px;
+            font-family: mySecondFont;
+            font-size: 16px;
+        }
+        input[type=submit] {
+            width: 100%;
+            padding: 10px;
+            background-color: hsl(154, 59%, 51%);
+            border-radius: 5px;
+            font-family: myFont;
+            font-size: 16px;
+            border: none;
+            box-shadow: 0px 5px hsl(154, 59%, 40%);
+            color: white;
+        }
+        h1 {
+            color: white;
+            font-size: 30px;
+            font-family: mySecondFont;
+            width: 100%;
+        }
+        p {
+            color: white;
+            font-size: 16px;
+            font-family: myFont;
+            width: 100%;
+        }
+        /* form {
+            background-color: white;
+            padding: 35px;
+            margin-right: 50px;
+            margin-top: 10px;
+            width: 50%;
+            border-radius: 10px;
+            flex-wrap: wrap;
+        } */
+        /* .item-b {
+            grid-area: b;
+            flex-wrap: wrap;
+            flex-direction: column;
+        } */
+    }
